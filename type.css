@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+}
+
+img {
+  height: 600px;
+}
+
+.heading {
+  color: gainsboro;
+  opacity: 0.75;
+  font-size: 3.5em;
+  line-height: 1em;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  padding-right: 25vw;
+  z-index: -1;
+  position: fixed;
+}
+
+.info {
+  font-size: 1em;
+  position: fixed;
+  bottom: 0px;
+  padding: 20px;
+  color: gainsboro;
+  z-index: -1;
+  opacity: 0.75;
+}
+
+.title {
+  font-size: 2em;
+    border-top: 1px solid black;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.title:hover {
+    background: gainsboro;
+}
+
+.word {
+  font-size: 2em;
+  position: absolute;
+  right: 0px;
+  padding: 20px;
+  color: white;
+  z-index: 2;
+}
+
+.content {
+    padding: 20px;
+    display: none;
+    overflow-x: auto;
+overflow-y: hidden;
+white-space: nowrap;
+    border-top: 1px solid black;
+}
+
+.change-text {
+  animation-name: fontChange;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fontChange {
+  0% {
+    font-family: serif;
+  }
+  20% {
+    font-family: 'Arial', sans-serif;
+  }
+  40% {
+    font-family: serif;
+  }
+  60% {
+    font-family: 'Arial', sans-serif;
+  }
+  80% {
+    font-family: serif;
+  }
+}
